@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <nav class="wrapper">
+            <div class="brand"> 
+                <div class="name">GALLERY</div>
+            </div>
+            <ul class="pilihan">
+                <li><a href="index.html">ANGKASA</a></li>
+                <li><a href="beranda2.html">ALAM </a></li>
+                <li><a href="beranda3.html">ARTISTIK</a></li>
+                <li><a href="upload.html">UPLOAD</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <h2>Unggah Gambar</h2>
+        <form>
+           <label for="title"  class="datagambar"> Data Gambar </label>
+           <input type="text" name="Nama Pembuat" placeholder="Nama pembuat" class="penulis" required>
+           <input type="text" name="tema" placeholder="tema" class="temma" required>
+           <input type="text" name="File Name" placeholder="File Name" class="file" required>
+           <label for="title" class="datagambar">Tanggal dibuat</label>
+           <input type="date" id="tanggal" name="tanggal dibuat"  class="date" required>
+        </form>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <label for="file" class="upload-label">Pilih Gambar:</label>
+            <input type="file" name="file" id="file" class="file-input">
+            <input type="submit" name="submit" value="Unggah" class="upload-button">
+        </form>
+       
+ </div>
+</body>
+</html>
